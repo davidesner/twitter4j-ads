@@ -1,11 +1,12 @@
-package twitter4jads.models.ads;
-
-import com.google.gson.annotations.SerializedName;
-import twitter4jads.models.ads.audience.TailoredAudiencePermissionLevel;
-import twitter4jads.models.ads.audience.TailoredAudienceType;
+package twitter4jads.models.ads.audience;
 
 import java.util.Date;
 import java.util.List;
+
+import com.google.gson.annotations.SerializedName;
+
+import twitter4jads.models.ads.TargetingType;
+import twitter4jads.models.ads.TwitterEntity;
 
 /**
  * User: abhishekanand

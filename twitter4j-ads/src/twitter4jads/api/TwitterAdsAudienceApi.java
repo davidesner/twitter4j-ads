@@ -1,17 +1,18 @@
 package twitter4jads.api;
 
+import java.util.List;
+
 import com.google.common.base.Optional;
+
 import twitter4jads.BaseAdsListBatchPostResponse;
 import twitter4jads.BaseAdsListResponse;
 import twitter4jads.BaseAdsListResponseIterable;
 import twitter4jads.BaseAdsResponse;
 import twitter4jads.internal.models4j.TwitterException;
-import twitter4jads.models.ads.TailoredAudience;
+import twitter4jads.models.ads.audience.TailoredAudience;
 import twitter4jads.models.ads.audience.TailoredAudienceMatchingRules;
 import twitter4jads.models.ads.audience.TailoredAudienceOperation;
 import twitter4jads.models.ads.audience.TailoredAudiencePermission;
-
-import java.util.List;
 
 /**
  * User: abhay
@@ -29,7 +30,7 @@ public interface TwitterAdsAudienceApi {
      * @throws TwitterException
      * @see <a href="https://dev.twitter.com/ads/reference/get/accounts/%3Aaccount_id/tailored_audiences">https://dev.twitter.com/ads/reference/get/accounts/%3Aaccount_id/tailored_audiences</a>
      */
-    BaseAdsListResponseIterable<TailoredAudience> getAllTailoredAudiences(String accountId, Optional<Integer> count,
+    BaseAdsListResponseIterable<twitter4jads.models.ads.audience.TailoredAudience> getAllTailoredAudiences(String accountId, Optional<Integer> count,
                                                                           Optional<Boolean> withDeleted, Optional<String> cursor)
             throws TwitterException;
 
